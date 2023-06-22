@@ -109,7 +109,7 @@ export default function MainComponent() {
             </div>
           </div>
         </div>
-        <hr className="text-green-800 w-2/3 text-center" />
+        <hr className="text-green-800 w-2/3 mx-auto" />
         <div className="flex flex-col md:flex-row lg:flex-row p-12 justify-center mx-auto gap-1 md:gap-12 lg:gap-12">
           <Image
             src={followerAvatar}

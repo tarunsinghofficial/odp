@@ -196,7 +196,7 @@ function MainComponent() {
                     })
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx("hr", {
-                    className: "text-green-800 w-2/3 text-center"
+                    className: "text-green-800 w-2/3 mx-auto"
                 }),
                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                     className: "flex flex-col md:flex-row lg:flex-row p-12 justify-center mx-auto gap-1 md:gap-12 lg:gap-12",
