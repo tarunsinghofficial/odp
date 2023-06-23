@@ -1,41 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:ital,wght@0,100;0,400;1,500;1,900&family=Roboto:wght@100;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:ital,wght@0,100;0,400;1,500;1,900&family=Roboto:wght@100;400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer utilities {
+
+  .blog-title {
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+  }
+  .blog-first-details {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+  }
+
+  .blog-home-title {
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+  }
   .post-content p {
-    @apply pb-4 pt-4 text-lg leading-7;
+    @apply pb-4 pt-4 text-xl leading-7;
+    font-family: Lato, sans-serif;
+    font-weight: 200;
   }
   .post-content a {
     @apply underline text-green-700 hover:text-green-800;
   }
   .post-content h1 {
-    @apply pb-4 text-3xl font-bold;
+    @apply pb-4 text-5xl;
+    font-weight: bold;
   }
   .post-content h2 {
-    @apply pb-4 text-2xl font-bold;
+    @apply pt-4 text-4xl;
+    font-family: Lato, sans-serif;
+    font-weight: bold;
   }
   .post-content h3 {
-    @apply pb-4 text-xl font-bold;
+    @apply pt-4 text-3xl;
+    font-family: Lato, sans-serif;
+    font-weight: bold;
   }
   .post-content h4 {
-    @apply pb-4 text-lg font-bold;
+    @apply pt-4 text-2xl;
+    font-family: Lato, sans-serif;
+    font-weight: bold;
   }
   .post-content ul {
-    @apply pb-4 list-disc text-lg;
+    @apply pt-4 list-disc text-lg pb-2;
+    font-family: Lato, sans-serif;
+    font-weight: 200;
   }
 
   .post-content ol  {
-    @apply pb-4 list-decimal pl-4 text-lg;
+    @apply pt-4 list-decimal pl-4 text-lg pb-2; 
+    font-family: Lato, sans-serif;
+    font-weight: 200;
   }
+  .post-content li  {
+    @apply pt-1 pl-1 text-lg ;
+    font-family: Lato, sans-serif;
+    font-weight: 200;
+  }
+
+  .post-content strong {
+    @apply pt-4;
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+  }
+
   .post-content pre {
     @apply pb-4 bg-[#0F172A] text-[#E5E7EB] p-4 rounded-md;
     overflow-x: auto;
     white-space: pre;
+    font-family: Lato, sans-serif;
+    font-weight: 200;
+    margin-bottom: 2em;
+    margin-top: 2em;
   }
+
   .post-content img {
     display: block;
     border-radius: 6px;
+    padding-bottom: 2em;
     margin: 0 auto; /* Center the image horizontally */
     max-width: 100%; /* Ensure the image doesn't exceed its container */
   }
@@ -48,12 +97,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: Lato, sans-serif;
+    font-weight: 200;
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:ital,wght@0,100;0,400;1,500;1,900&family=Roboto:wght@100;400&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 /* Styles for screens up to 768px width */
 @media (max-width: 768px) {
@@ -88,6 +137,7 @@ a {
   }
 }
 
-.font-nunito {
-  font-family: 'Nunito', sans-serif;
+@font-face {
+  font-family: 'Lato';
+  src: url('../assets/Lato/Lato-Regular.ttf');
 }

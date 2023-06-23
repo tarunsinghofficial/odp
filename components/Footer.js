@@ -8,7 +8,7 @@ function Footer() {
       <footer class="p-4 bg-green-900 shadow md:px-6 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
           <a
-            href="https://flowbite.com/"
+            href="/"
             class="flex items-center mb-4 sm:mb-0"
           >
             <Image

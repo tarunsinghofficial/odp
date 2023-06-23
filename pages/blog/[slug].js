@@ -42,21 +42,21 @@ const BlogPost = ({ blogPost }) => {
   const readTimeMinutes = Math.ceil(wordCount / wordsPerMinute);
 
   return (
-    <div className="mt-[73px] font-nunito">
+    <div className="mt-[73px]">
       <div className="container mx-auto p-4">
-        <h1 className="text-5xl font-bold text-left tracking-wide container mx-auto max-w-3xl mb-4 my-10">
+        <h1 className="text-6xl text-left tracking-wide container mx-auto max-w-3xl mb-4 my-10 blog-title">
           {blogPost.title}
         </h1>
         <div className="container mx-auto flex flex-col items-center ">
-          <div className="flex flex-row justify-between items-center container mx-auto max-w-3xl py-2 text-left">
+          <div className="flex flex-row justify-between items-center container mx-auto max-w-3xl py-2 text-left blog-first-details">
             <div className="flex items-center space-x-3">
-              <p className="text-sm text-gray-500">
+              <p className="text-md text-gray-500">
                 Published on {blogPost.date} by{" "}
                 <span className="font-bold">{blogPost.author}</span>
               </p>
-              <span className="text-xl"> · </span>
-              <p className="text-sm text-gray-500 mt-1">
-                {readTimeMinutes} min {readTimeMinutes > 1 && "s"} read
+              <span className="text-xl">·</span>
+              <p className="text-md text-gray-500 mt-1">
+                {readTimeMinutes} min {readTimeMinutes > 1} read
               </p>
             </div>
             <div className="rounded-full">

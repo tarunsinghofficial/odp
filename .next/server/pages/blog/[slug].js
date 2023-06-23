@@ -68,25 +68,25 @@ const BlogPost = ({ blogPost  })=>{
     const wordCount = sanitizedContent.split(" ").length;
     const readTimeMinutes = Math.ceil(wordCount / wordsPerMinute);
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-        className: "mt-[73px] font-nunito",
+        className: "mt-[73px]",
         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
             className: "container mx-auto p-4",
             children: [
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                    className: "text-5xl font-bold text-left tracking-wide container mx-auto max-w-3xl mb-4 my-10",
+                    className: "text-6xl text-left tracking-wide container mx-auto max-w-3xl mb-4 my-10 blog-title",
                     children: blogPost.title
                 }),
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                     className: "container mx-auto flex flex-col items-center ",
                     children: [
                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "flex flex-row justify-between items-center container mx-auto max-w-3xl py-2 text-left",
+                            className: "flex flex-row justify-between items-center container mx-auto max-w-3xl py-2 text-left blog-first-details",
                             children: [
                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                     className: "flex items-center space-x-3",
                                     children: [
                                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                                            className: "text-sm text-gray-500",
+                                            className: "text-md text-gray-500",
                                             children: [
                                                 "Published on ",
                                                 blogPost.date,
@@ -100,14 +100,14 @@ const BlogPost = ({ blogPost  })=>{
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                             className: "text-xl",
-                                            children: " \xb7 "
+                                            children: "\xb7"
                                         }),
                                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                                            className: "text-sm text-gray-500 mt-1",
+                                            className: "text-md text-gray-500 mt-1",
                                             children: [
                                                 readTimeMinutes,
                                                 " min ",
-                                                readTimeMinutes > 1 && "s",
+                                                readTimeMinutes > 1,
                                                 " read"
                                             ]
                                         })

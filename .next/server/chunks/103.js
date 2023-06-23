@@ -141,7 +141,7 @@ function Footer() {
                     class: "sm:flex sm:items-center sm:justify-between",
                     children: [
                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
-                            href: "https://flowbite.com/",
+                            href: "/",
                             class: "flex items-center mb-4 sm:mb-0",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_1___default()), {

@@ -1,6 +1,6 @@
 {
-  "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
+  "/_app": "pages/_app.js",
   "/About": "pages/About.html",
   "/MainComponent": "pages/MainComponent.html",
   "/content/codingcomp": "pages/content/codingcomp.html",
@@ -11,17 +11,17 @@
   "/content/researchinternship": "pages/content/researchinternship.html",
   "/content/scholarship": "pages/content/scholarship.html",
   "/content/sdesheet": "pages/content/sdesheet.html",
-  "/content/studentambassador": "pages/content/studentambassador.html",
   "/content/studyresources": "pages/content/studyresources.html",
+  "/content/studentambassador": "pages/content/studentambassador.html",
   "/content/swags": "pages/content/swags.html",
   "/content/women/codingwomen": "pages/content/women/codingwomen.html",
   "/content/women/mentorship": "pages/content/women/mentorship.html",
   "/content/women/womeninternship": "pages/content/women/womeninternship.html",
   "/content/women/womenscholarship": "pages/content/women/womenscholarship.html",
-  "/studentopportunity": "pages/studentopportunity.html",
   "/": "pages/index.html",
+  "/studentopportunity": "pages/studentopportunity.html",
+  "/_document": "pages/_document.js",
   "/blog": "pages/blog.js",
   "/blog/[slug]": "pages/blog/[slug].js",
-  "/_document": "pages/_document.js",
   "/404": "pages/404.html"
 }

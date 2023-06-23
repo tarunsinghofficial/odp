@@ -223,7 +223,7 @@ function MainComponent() {
                                     className: "flex flex-row lg:flex-row md:flex-row p-2 items-center justify center gap-5",
                                     children: [
                                         /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                            href: "",
+                                            href: "https://www.linkedin.com/company/onedevplace/",
                                             className: "flex flex-row bg-green-200 border border-green-500 drop-shadow-xl w-[4em] h-[4em] lg:w-[6em] lg:h-[6em] hover:cursor-pointer hover:scale-125 transition-transform duration-300 ease-in rounded-2xl items-center justify-center p-3",
                                             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("svg", {
                                                 viewBox: "0 0 128 128",
@@ -262,7 +262,7 @@ function MainComponent() {
                                             })
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                            href: "",
+                                            href: "https://twitter.com/OneDevPlace",
                                             className: "flex flex-row bg-green-200 border border-green-500 drop-shadow-xl w-[4em] h-[4em] lg:w-[6em] lg:h-[6em] hover:cursor-pointer hover:scale-125 transition-transform duration-300 ease-in rounded-2xl items-center justify-center p-3",
                                             children: /*#__PURE__*/ jsx_runtime_.jsx("svg", {
                                                 viewBox: "0 0 128 128",
@@ -273,7 +273,7 @@ function MainComponent() {
                                             })
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                            href: "",
+                                            href: "https://github.com/tarunsinghofficial/",
                                             className: "flex flex-row bg-green-200 border border-green-500 drop-shadow-xl w-[4em] h-[4em] lg:w-[6em] lg:h-[6em] hover:cursor-pointer hover:scale-125 transition-transform duration-300 ease-in rounded-2xl items-center justify-center p-3",
                                             children: /*#__PURE__*/ jsx_runtime_.jsx("svg", {
                                                 viewBox: "0 0 128 128",
