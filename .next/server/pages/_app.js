@@ -20,6 +20,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2103);
 /* harmony import */ var _MainComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(242);
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(723);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _utils_analytics__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5115);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_components_Navbar__WEBPACK_IMPORTED_MODULE_2__]);
 _components_Navbar__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
@@ -27,7 +30,16 @@ _components_Navbar__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies_
 
 
 
+
+
 function MyApp({ Component , pageProps  }) {
+    (0,react__WEBPACK_IMPORTED_MODULE_5__.useEffect)(()=>{
+        if (!window.GA_INITIALIZED) {
+            (0,_utils_analytics__WEBPACK_IMPORTED_MODULE_6__/* .initGA */ ._)("G-T6BF8XDL38"); // Replace with your actual Measurement ID
+            window.GA_INITIALIZED = true;
+        }
+        (0,_utils_analytics__WEBPACK_IMPORTED_MODULE_6__/* .logPageView */ .N)();
+    }, []);
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("header", {
@@ -46,6 +58,35 @@ function MyApp({ Component , pageProps  }) {
 
 __webpack_async_result__();
 } catch(e) { __webpack_async_result__(e); } });
+
+/***/ }),
+
+/***/ 5115:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "_": () => (/* binding */ initGA),
+  "N": () => (/* binding */ logPageView)
+});
+
+;// CONCATENATED MODULE: external "react-ga"
+const external_react_ga_namespaceObject = require("react-ga");
+var external_react_ga_default = /*#__PURE__*/__webpack_require__.n(external_react_ga_namespaceObject);
+;// CONCATENATED MODULE: ./utils/analytics.js
+
+const initGA = (measurementId)=>{
+    external_react_ga_default().initialize(measurementId);
+};
+const logPageView = ()=>{
+    external_react_ga_default().set({
+        page: window.location.pathname
+    });
+    external_react_ga_default().pageview(window.location.pathname);
+};
+
 
 /***/ }),
 
