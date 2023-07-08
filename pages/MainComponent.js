@@ -27,20 +27,32 @@ export default function MainComponent() {
         >
           <div class="grid max-w-screen-2xl px-4 py-8 mx-auto lg:gap-12 xl:gap-12 lg:py-16 lg:flex lg:flex-row">
             <div class="mr-auto place-self-center">
-              <h1 className="text-green-600 max-w-2xl mb-4 text-center md:text-left lg:text-left text-5xl tracking-tight leading-none md:text-6xl xl:text-8xl">
+              <h1 className="text-green-600 max-w-2xl mb-4 text-center md:text-left lg:text-left text-[50px] tracking-tight leading-none md:text-6xl xl:text-8xl">
                 Welcome to{" "}
                 <span className="text-green-800 font-bold">OneDevPlace</span>
               </h1>
-              <p class="max-w-2xl mb-6 lg:mb-8 md:text-lg lg:text-xl text-[1em] text-center md:text-left lg:text-left text-gray-600">
-                Find all Developers programs, student opportunities & other
-                resources at one place 🚀
-              </p>
+              
+
+              <div class="max-w-2xl my-8 lg:mb-8 text-2xl flex flex-wrap text-gray-600">
+                Find all programs for<span className="flex flex-wrap gap-4 text-center md:text-none lg:text-none items-center py-4 mb-2">
+                <span className="py-2 px-4 rounded-md bg-[#E9F9EE] text-[#299764] ">
+                  <p className="text-2xl"> Students,</p>
+                </span>
+                <span className="py-2 px-4 rounded-md bg-[#EDF6FF] text-[#0081F1] ">
+                  <p className="text-2xl">Developers</p>
+                </span>
+                <span className="py-2 px-4 rounded-md bg-[#FFF1E7] text-[#ED5F00]">
+                  <p className="text-2xl">Womens </p>
+                </span>
+                <p className="text-2xl">& more opportunities at one place 🚀</p>
+              </span> 
+              </div>
               <div className="flex justify-center md:justify-start lg:justify-start">
                 <a
                   href="#explore"
-                  class="w-1/2 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-full bg-green-800 hover:bg-green-900 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-900"
+                  class="w-full md:w-1/2 lg:w-1/2 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-green-800 hover:bg-green-900 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-900"
                 >
-                  <span className="text-white">Explore</span>
+                  <span className="text-white text-2xl">Explore</span>
                   <svg
                     class="w-5 h-5 ml-2 -mr-1"
                     fill="currentColor"
@@ -62,6 +74,7 @@ export default function MainComponent() {
                 alt="hero"
                 className="mt-10 md:mt-10 lg:mt-0"
                 id="animate-topdown"
+                priority={true}
               />
             </div>
           </div>
@@ -73,10 +86,11 @@ export default function MainComponent() {
           </h1>
         </div>
         <div className="py-12 px-5 text-center" id="explore">
+          
           <div className="flex container flex-col mx-auto xl:gap-[8em] lg:gap-[8em] md:gap-[6em] gap-[2em]">
             <div className="flex flex-col md:flex-row lg:flex-row mx-auto items-center gap-12">
-              <div className="bg-green-700 text-white shadow-xl p-4 rounded-md max-w-lg items-center justify-center flex flex-col gap-4">
-                <h2 className="text-3xl text-white font-bold">
+              <div className="bg-[#E9F9EE] shadow-xl p-4 rounded-md max-w-lg items-center justify-center flex flex-col gap-4">
+                <h2 className="text-3xl text-[#299764]  font-bold">
                   Student Opportunities
                 </h2>
                 <p className="text-[15px] md:text-lg lg:text-lg">
@@ -86,12 +100,13 @@ export default function MainComponent() {
                   programs, Hackathons, Coding Competitions, etc.
                 </p>
               </div>
-              <Image src={stud} alt="hero-1" width={350} height={350} />
+              <Image src={stud} alt="hero-1" width={350} height={350} priority={true} />
             </div>
+
             <div className="flex flex-col md:flex-row lg:flex-row items-center mx-auto gap-12">
               <Image src={developer} alt="hero-1" width={450} height={450} />
-              <div className="bg-green-700 text-white shadow-xl p-4 rounded-md max-w-lg items-center justify-center flex flex-col gap-4">
-                <h2 className="text-3xl text-white font-bold">
+              <div className="bg-[#EDF6FF]  shadow-xl p-4 rounded-md max-w-lg items-center justify-center flex flex-col gap-4">
+                <h2 className="text-3xl text-[#0081F1] font-bold">
                   Developer Opportunities
                 </h2>
                 <p className="text-[15px] md:text-lg lg:text-lg">
@@ -104,8 +119,8 @@ export default function MainComponent() {
               </div>
             </div>
             <div className="flex flex-col md:flex-row lg:flex-row items-center mx-auto gap-12">
-              <div className="bg-green-700 text-white shadow-xl p-4 rounded-md max-w-lg items-center justify-center flex flex-col gap-4">
-                <h2 className="text-3xl text-white font-bold">Internships</h2>
+              <div className="bg-[#FFF1E7]  shadow-xl p-4 rounded-md max-w-lg items-center justify-center flex flex-col gap-4">
+                <h2 className="text-3xl text-[#ED5F00] font-bold">Internships & more</h2>
                 <p className="text-[15px] md:text-lg lg:text-lg">
                   OneDevPlace can help you find good Internships Websites,
                   Internships/Externships for students and developers. This site
@@ -117,10 +132,10 @@ export default function MainComponent() {
             </div>
           </div>
         </div>
-
+        <div className="h-[2px] w-full bg-gradient-to-r  from-green-600 to-[#fff]"></div>
         {/* From the founder section */}
-        <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold mb-4 text-center">
-          👋 From The <span className="text-green-800 font-bold">Founder</span>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 mt-24 text-center">
+          👋 From The <span className="text-green-800">Founder</span>
         </h2>
         <div className="py-12 px-5">
           <div className="flex flex-col md:flex-row lg:flex-row justify-center gap-12">
@@ -131,6 +146,7 @@ export default function MainComponent() {
                 width={600}
                 height={800}
                 className="rounded-lg"
+                priority={true}
               />
             </div>
             <div className="lg:w-1/2 lg:mt-10">
@@ -160,6 +176,7 @@ export default function MainComponent() {
                   width={80}
                   height={80}
                   className="rounded-full"
+                  priority={true}
                 />
                 <Image
                   src={guvi}
@@ -167,6 +184,7 @@ export default function MainComponent() {
                   width={80}
                   height={80}
                   className="rounded-full"
+                  priority={true}
                 />
                 <Image
                   src={tp}
@@ -174,6 +192,7 @@ export default function MainComponent() {
                   width={60}
                   height={60}
                   className="rounded-full"
+                  priority={true}
                 />
                 <Image
                   src={cm}
@@ -181,6 +200,7 @@ export default function MainComponent() {
                   width={60}
                   height={60}
                   className="rounded-full"
+                  priority={true}
                 />
               </div>
             </div>
@@ -197,6 +217,7 @@ export default function MainComponent() {
               height={100}
               width={130}
               className="md:w-[12em] md:h-[22em] lg:w-[12em] lg:h-[22em]"
+              priority={true}
             />
           )}
           <div className="flex flex-col p-2 items-center gap-5">

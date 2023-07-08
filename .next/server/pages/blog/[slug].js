@@ -73,14 +73,14 @@ const BlogPost = ({ blogPost  })=>{
             className: "container mx-auto p-4",
             children: [
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                    className: "text-3xl md:text-4xl lg:text-5xl text-left tracking-wide container mx-auto max-w-3xl mb-4 my-4 blog-title",
+                    className: "text-3xl md:text-4xl lg:text-5xl text-left tracking-wide container mx-auto max-w-4xl mb-4 my-4 blog-title",
                     children: blogPost.title
                 }),
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                     className: "container mx-auto flex flex-col items-center",
                     children: [
                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "flex flex-row justify-between items-center container mx-auto max-w-3xl py-2 text-left blog-first-details",
+                            className: "flex flex-row justify-between items-center container mx-auto max-w-4xl py-2 text-left blog-first-details",
                             children: [
                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                     className: "flex items-center space-x-3",
@@ -126,10 +126,10 @@ const BlogPost = ({ blogPost  })=>{
                             ]
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("hr", {
-                            className: "bg-green-700 h-0.5 container mx-auto max-w-3xl my-6"
+                            className: "bg-green-700 h-0.5 container mx-auto max-w-4xl my-6"
                         }),
                         blogPost.featuredImage && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            className: "w-full max-w-3xl mt-5",
+                            className: "w-full max-w-4xl mt-5",
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_5___default()), {
                                 src: blogPost.featuredImage,
                                 alt: "Featured Image",
@@ -139,14 +139,14 @@ const BlogPost = ({ blogPost  })=>{
                             })
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            className: "w-full max-w-3xl overflow-clip mt-5",
+                            className: "w-full max-w-4xl overflow-clip mt-5",
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "prose prose-lg post-content",
                                 children: (0,html_react_parser__WEBPACK_IMPORTED_MODULE_6__["default"])(sanitizedContent)
                             })
                         }),
                         blogPost.tags.length > 0 && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            className: "container px-3 w-screen md:max-w-3xl lg:max-w-3xl items-start mt-8",
+                            className: "container px-3 w-screen md:max-w-4xl lg:max-w-4xl items-start mt-8",
                             children: Array.isArray(blogPost.tags) && blogPost.tags.length > 0 && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "flex flex-wrap space-x-2",
                                 children: blogPost.tags.map((tag)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
@@ -156,10 +156,10 @@ const BlogPost = ({ blogPost  })=>{
                             })
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("hr", {
-                            className: "bg-green-700 h-0.5 container mx-auto max-w-3xl my-6"
+                            className: "bg-green-700 h-0.5 container mx-auto max-w-4xl my-6"
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            className: "container mx-auto max-w-3xl my-10 flex items-center justify-start",
+                            className: "container mx-auto max-w-4xl my-10 flex items-center justify-start",
                             children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                 className: "flex flex-col",
                                 children: [

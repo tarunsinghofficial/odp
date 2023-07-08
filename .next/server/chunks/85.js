@@ -83,7 +83,7 @@ function MainComponent() {
                                 class: "mr-auto place-self-center",
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("h1", {
-                                        className: "text-green-600 max-w-2xl mb-4 text-center md:text-left lg:text-left text-5xl tracking-tight leading-none md:text-6xl xl:text-8xl",
+                                        className: "text-green-600 max-w-2xl mb-4 text-center md:text-left lg:text-left text-[50px] tracking-tight leading-none md:text-6xl xl:text-8xl",
                                         children: [
                                             "Welcome to",
                                             " ",
@@ -93,18 +93,50 @@ function MainComponent() {
                                             })
                                         ]
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                        class: "max-w-2xl mb-6 lg:mb-8 md:text-lg lg:text-xl text-[1em] text-center md:text-left lg:text-left text-gray-600",
-                                        children: "Find all Developers programs, student opportunities & other resources at one place \uD83D\uDE80"
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        class: "max-w-2xl my-8 lg:mb-8 text-2xl flex flex-wrap text-gray-600",
+                                        children: [
+                                            "Find all programs for",
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("span", {
+                                                className: "flex flex-wrap gap-4 text-center md:text-none lg:text-none items-center py-4 mb-2",
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                        className: "py-2 px-4 rounded-md bg-[#E9F9EE] text-[#299764] ",
+                                                        children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                            className: "text-2xl",
+                                                            children: " Students,"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                        className: "py-2 px-4 rounded-md bg-[#EDF6FF] text-[#0081F1] ",
+                                                        children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                            className: "text-2xl",
+                                                            children: "Developers"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                        className: "py-2 px-4 rounded-md bg-[#FFF1E7] text-[#ED5F00]",
+                                                        children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                            className: "text-2xl",
+                                                            children: "Womens "
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                        className: "text-2xl",
+                                                        children: "& more opportunities at one place \uD83D\uDE80"
+                                                    })
+                                                ]
+                                            })
+                                        ]
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                         className: "flex justify-center md:justify-start lg:justify-start",
                                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
                                             href: "#explore",
-                                            class: "w-1/2 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-full bg-green-800 hover:bg-green-900 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-900",
+                                            class: "w-full md:w-1/2 lg:w-1/2 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-green-800 hover:bg-green-900 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-900",
                                             children: [
                                                 /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                    className: "text-white",
+                                                    className: "text-white text-2xl",
                                                     children: "Explore"
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime_.jsx("svg", {
@@ -129,7 +161,8 @@ function MainComponent() {
                                     src: student,
                                     alt: "hero",
                                     className: "mt-10 md:mt-10 lg:mt-0",
-                                    id: "animate-topdown"
+                                    id: "animate-topdown",
+                                    priority: true
                                 })
                             })
                         ]
@@ -152,10 +185,10 @@ function MainComponent() {
                                 className: "flex flex-col md:flex-row lg:flex-row mx-auto items-center gap-12",
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: "bg-green-700 text-white shadow-xl p-4 rounded-md max-w-lg items-center justify-center flex flex-col gap-4",
+                                        className: "bg-[#E9F9EE] shadow-xl p-4 rounded-md max-w-lg items-center justify-center flex flex-col gap-4",
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                                className: "text-3xl text-white font-bold",
+                                                className: "text-3xl text-[#299764] font-bold",
                                                 children: "Student Opportunities"
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
@@ -168,7 +201,8 @@ function MainComponent() {
                                         src: stud,
                                         alt: "hero-1",
                                         width: 350,
-                                        height: 350
+                                        height: 350,
+                                        priority: true
                                     })
                                 ]
                             }),
@@ -182,10 +216,10 @@ function MainComponent() {
                                         height: 450
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: "bg-green-700 text-white shadow-xl p-4 rounded-md max-w-lg items-center justify-center flex flex-col gap-4",
+                                        className: "bg-[#EDF6FF] shadow-xl p-4 rounded-md max-w-lg items-center justify-center flex flex-col gap-4",
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                                className: "text-3xl text-white font-bold",
+                                                className: "text-3xl text-[#0081F1] font-bold",
                                                 children: "Developer Opportunities"
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
@@ -200,11 +234,11 @@ function MainComponent() {
                                 className: "flex flex-col md:flex-row lg:flex-row items-center mx-auto gap-12",
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: "bg-green-700 text-white shadow-xl p-4 rounded-md max-w-lg items-center justify-center flex flex-col gap-4",
+                                        className: "bg-[#FFF1E7] shadow-xl p-4 rounded-md max-w-lg items-center justify-center flex flex-col gap-4",
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                                className: "text-3xl text-white font-bold",
-                                                children: "Internships"
+                                                className: "text-3xl text-[#ED5F00] font-bold",
+                                                children: "Internships & more"
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                 className: "text-[15px] md:text-lg lg:text-lg",
@@ -223,12 +257,15 @@ function MainComponent() {
                         ]
                     })
                 }),
+                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    className: "h-[2px] w-full bg-gradient-to-r from-green-600 to-[#fff]"
+                }),
                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("h2", {
-                    className: "text-3xl md:text-4xl lg:text-4xl font-bold mb-4 text-center",
+                    className: "text-3xl md:text-4xl lg:text-5xl font-bold mb-4 mt-24 text-center",
                     children: [
                         "\uD83D\uDC4B From The ",
                         /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                            className: "text-green-800 font-bold",
+                            className: "text-green-800",
                             children: "Founder"
                         })
                     ]
@@ -245,7 +282,8 @@ function MainComponent() {
                                     alt: "Founder Image",
                                     width: 600,
                                     height: 800,
-                                    className: "rounded-lg"
+                                    className: "rounded-lg",
+                                    priority: true
                                 })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -274,28 +312,32 @@ function MainComponent() {
                                                 alt: "Work Experience Logo",
                                                 width: 80,
                                                 height: 80,
-                                                className: "rounded-full"
+                                                className: "rounded-full",
+                                                priority: true
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                                 src: guvi,
                                                 alt: "Work Experience Logo",
                                                 width: 80,
                                                 height: 80,
-                                                className: "rounded-full"
+                                                className: "rounded-full",
+                                                priority: true
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                                 src: tplogo,
                                                 alt: "Work Experience Logo",
                                                 width: 60,
                                                 height: 60,
-                                                className: "rounded-full"
+                                                className: "rounded-full",
+                                                priority: true
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                                 src: cmlogo,
                                                 alt: "Work Experience Logo",
                                                 width: 60,
                                                 height: 60,
-                                                className: "rounded-full"
+                                                className: "rounded-full",
+                                                priority: true
                                             })
                                         ]
                                     })
@@ -315,7 +357,8 @@ function MainComponent() {
                             alt: "avatar",
                             height: 100,
                             width: 130,
-                            className: "md:w-[12em] md:h-[22em] lg:w-[12em] lg:h-[22em]"
+                            className: "md:w-[12em] md:h-[22em] lg:w-[12em] lg:h-[22em]",
+                            priority: true
                         }),
                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                             className: "flex flex-col p-2 items-center gap-5",

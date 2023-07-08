@@ -203,12 +203,15 @@ __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __we
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _Dropdown__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7695);
-/* harmony import */ var _assets_logo_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5240);
-/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5675);
-/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_6__);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_Dropdown__WEBPACK_IMPORTED_MODULE_4__]);
-_Dropdown__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6290);
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_icons_fa__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _Dropdown__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7695);
+/* harmony import */ var _assets_logo_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5240);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(5675);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_7__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_Dropdown__WEBPACK_IMPORTED_MODULE_5__]);
+_Dropdown__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
 
 
 
@@ -217,7 +220,7 @@ _Dropdown__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.then ? 
 
 
 function Navbar() {
-    const [navbar, setNavbar] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
+    const [navbarOpen, setNavbarOpen] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         children: [
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_head__WEBPACK_IMPORTED_MODULE_1___default()), {
@@ -248,8 +251,8 @@ function Navbar() {
                                         href: "/",
                                         className: "flex flex-row items-center",
                                         children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_6___default()), {
-                                                src: _assets_logo_png__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z,
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_7___default()), {
+                                                src: _assets_logo_png__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z,
                                                 alt: "logo",
                                                 width: 40,
                                                 height: 40
@@ -264,29 +267,11 @@ function Navbar() {
                                         className: "md:hidden",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                             className: "p-2 text-gray-700 rounded-md outline-none",
-                                            onClick: ()=>setNavbar(!navbar),
-                                            children: navbar ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("svg", {
-                                                xmlns: "http://www.w3.org/2000/svg",
-                                                className: "w-6 h-6 text-green-900",
-                                                viewBox: "0 0 20 20",
-                                                fill: "currentColor",
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("path", {
-                                                    fillRule: "evenodd",
-                                                    d: "M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z",
-                                                    clipRule: "evenodd"
-                                                })
-                                            }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("svg", {
-                                                xmlns: "http://www.w3.org/2000/svg",
-                                                className: "w-6 h-6 text-green-900",
-                                                fill: "none",
-                                                viewBox: "0 0 24 24",
-                                                stroke: "currentColor",
-                                                strokeWidth: 2,
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("path", {
-                                                    strokeLinecap: "round",
-                                                    strokeLinejoin: "round",
-                                                    d: "M4 6h16M4 12h16M4 18h16"
-                                                })
+                                            onClick: ()=>setNavbarOpen(!navbarOpen),
+                                            children: navbarOpen ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_4__.FaTimes, {
+                                                className: "w-6 h-6 text-green-900"
+                                            }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_4__.FaBars, {
+                                                className: "w-6 h-6 text-green-900"
                                             })
                                         })
                                     })
@@ -295,13 +280,13 @@ function Navbar() {
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: `flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"}`,
+                                className: `flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbarOpen ? "block" : "hidden"}`,
                                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-                                    className: "items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0",
+                                    className: `items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 ${navbarOpen ? "block" : "hidden"}`,
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                             className: "text-green-700",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Dropdown__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Dropdown__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {
                                                 dropHeader: "Students & Developers",
                                                 linkone: "/content/studentambassador",
                                                 linktwo: "/content/hackathon",
@@ -310,12 +295,13 @@ function Navbar() {
                                                 dropContentFirst: "Student Ambassador Programs",
                                                 dropContentSecond: "Hackathons",
                                                 dropContentThird: "Coding Competitions",
-                                                dropContentFourth: "Competitive Programming Sites"
+                                                dropContentFourth: "Competitive Programming Sites",
+                                                className: `${navbarOpen ? "hidden md:block" : ""}`
                                             })
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                             className: "text-green-700",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Dropdown__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Dropdown__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {
                                                 dropHeader: "Womens",
                                                 linkone: "/content/women/codingwomen",
                                                 linktwo: "/content/women/mentorship",
@@ -324,7 +310,8 @@ function Navbar() {
                                                 dropContentFirst: "Coding Competitions for Womens",
                                                 dropContentSecond: "Mentorship Programs",
                                                 dropContentThird: "Internships",
-                                                dropContentFourth: "Scholarships"
+                                                dropContentFourth: "Scholarships",
+                                                className: `${navbarOpen ? "hidden md:block" : ""}`
                                             })
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
@@ -361,7 +348,7 @@ function Navbar() {
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                             className: "text-green-700",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Dropdown__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Dropdown__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {
                                                 dropHeader: "More",
                                                 linkone: "/content/scholarship",
                                                 linktwo: "/content/researchinternship",
@@ -370,7 +357,8 @@ function Navbar() {
                                                 dropContentFirst: "Scholarships",
                                                 dropContentSecond: "Research Internships",
                                                 dropContentThird: "SDE Sheets",
-                                                dropContentFourth: "Study Resources"
+                                                dropContentFourth: "Study Resources",
+                                                className: `${navbarOpen ? "hidden md:block" : ""}`
                                             })
                                         })
                                     ]

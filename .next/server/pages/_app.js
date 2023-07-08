@@ -388,6 +388,14 @@ module.exports = require("react-dom");
 
 /***/ }),
 
+/***/ 6290:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react-icons/fa");
+
+/***/ }),
+
 /***/ 997:
 /***/ ((module) => {
 

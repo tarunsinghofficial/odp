@@ -44,11 +44,11 @@ const BlogPost = ({ blogPost }) => {
   return (
     <div className="mt-[73px]">
       <div className="container mx-auto p-4">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl text-left tracking-wide container mx-auto max-w-3xl mb-4 my-4 blog-title">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl text-left tracking-wide container mx-auto max-w-4xl mb-4 my-4 blog-title">
           {blogPost.title}
         </h1>
         <div className="container mx-auto flex flex-col items-center">
-          <div className="flex flex-row justify-between items-center container mx-auto max-w-3xl py-2 text-left blog-first-details">
+          <div className="flex flex-row justify-between items-center container mx-auto max-w-4xl py-2 text-left blog-first-details">
             <div className="flex items-center space-x-3">
               <p className="text-md text-gray-500">
                 Published on {blogPost.date} by{" "}
@@ -69,9 +69,9 @@ const BlogPost = ({ blogPost }) => {
               />
             </div>
           </div>
-          <hr className="bg-green-700 h-0.5 container mx-auto max-w-3xl my-6" />
+          <hr className="bg-green-700 h-0.5 container mx-auto max-w-4xl my-6" />
           {blogPost.featuredImage && (
-            <div className="w-full max-w-3xl mt-5">
+            <div className="w-full max-w-4xl mt-5">
               <Image
                 src={blogPost.featuredImage}
                 alt="Featured Image"
@@ -81,13 +81,13 @@ const BlogPost = ({ blogPost }) => {
               />
             </div>
           )}
-          <div className="w-full max-w-3xl overflow-clip mt-5">
+          <div className="w-full max-w-4xl overflow-clip mt-5">
             <div className="prose prose-lg post-content">
               {parse(sanitizedContent)}
             </div>
           </div>
           {blogPost.tags.length > 0 && (
-            <div className="container px-3 w-screen md:max-w-3xl lg:max-w-3xl items-start mt-8">
+            <div className="container px-3 w-screen md:max-w-4xl lg:max-w-4xl items-start mt-8">
               {Array.isArray(blogPost.tags) && blogPost.tags.length > 0 && (
                 <div className="flex flex-wrap space-x-2">
                   {blogPost.tags.map((tag) => (
@@ -102,8 +102,8 @@ const BlogPost = ({ blogPost }) => {
               )}
             </div>
           )}
-          <hr className="bg-green-700 h-0.5 container mx-auto max-w-3xl my-6" />
-          <div className="container mx-auto max-w-3xl my-10 flex items-center justify-start">
+          <hr className="bg-green-700 h-0.5 container mx-auto max-w-4xl my-6" />
+          <div className="container mx-auto max-w-4xl my-10 flex items-center justify-start">
             <div className="flex flex-col">
               <Image
                 width={100}
