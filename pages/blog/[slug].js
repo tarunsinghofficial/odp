@@ -44,10 +44,10 @@ const BlogPost = ({ blogPost }) => {
   return (
     <div className="mt-[73px]">
       <div className="container mx-auto p-4">
-        <h1 className="text-6xl text-left tracking-wide container mx-auto max-w-3xl mb-4 my-10 blog-title">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl text-left tracking-wide container mx-auto max-w-3xl mb-4 my-4 blog-title">
           {blogPost.title}
         </h1>
-        <div className="container mx-auto flex flex-col items-center ">
+        <div className="container mx-auto flex flex-col items-center">
           <div className="flex flex-row justify-between items-center container mx-auto max-w-3xl py-2 text-left blog-first-details">
             <div className="flex items-center space-x-3">
               <p className="text-md text-gray-500">
@@ -81,7 +81,7 @@ const BlogPost = ({ blogPost }) => {
               />
             </div>
           )}
-          <div className="w-full max-w-3xl mt-5">
+          <div className="w-full max-w-3xl overflow-clip mt-5">
             <div className="prose prose-lg post-content">
               {parse(sanitizedContent)}
             </div>

@@ -33,14 +33,14 @@ exports.modules = {
 
 function ItemCard({ name , about , link_url  }) {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: "w-[22em] md:w-[45em] lg:w-[80em] h-32 md:h-20 lg:h-20 overflow-hidden flex flex-col md:flex-row lg:flex-row items-start justify-between hover:cursor-pointer rounded-lg p-3 bg-white shadow-xl hover:shadow-2xl hover:scale-110 duration-700 ",
+        className: "w-[20em] md:w-[45em] lg:w-[80em] h-32 md:h-20 lg:h-20 overflow-hidden flex flex-col md:flex-row lg:flex-row items-start justify-between hover:cursor-pointer rounded-lg p-3 bg-white shadow-xl hover:shadow-2xl hover:scale-110 duration-700",
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
                 className: "text-sm md:text-lg lg:text-lg xl:text-lg font-bold text-left md:w-[26em] lg:w-[26em] capitalize text-green-700",
                 children: name
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                className: "text-xs md:text-sm lg:text-md xl:text-[18px] font-normal text-left md:w-[60em] lg:w-[60em] line-clamp-2 lg:line-clamp-none",
+                className: "text-xs md:text-sm lg:text-md xl:text-[18px] font-normal text-left md:w-[60em] lg:w-[60em] line-clamp-3 lg:line-clamp-none",
                 children: about
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {

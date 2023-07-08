@@ -59,7 +59,7 @@ function CodingComp() {
         </div>
         <Image src={ambassador} alt="swag" height={400} width={400} />
       </div>
-      <div className="container mx-auto p-4 mt-10 flex flex-wrap items-center justify-center gap-3">
+      <div className="container mx-auto p-5 mt-10 flex flex-wrap items-center justify-center gap-3">
         {isDataLoaded ? (
           data.map((item) => (
             <div key={item.$id}>

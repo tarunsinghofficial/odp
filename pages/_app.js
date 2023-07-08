@@ -20,7 +20,9 @@ function MyApp({ Component, pageProps }) {
       <header>
         <Navbar />
       </header>
-      <Component {...pageProps} />
+      <div className="mt-16 md:mt-18 lg:mt-[80px]">
+        <Component {...pageProps}  />
+      </div>
       <footer>
         <Footer />
       </footer>

@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 195;
-exports.ids = [195,86];
+exports.ids = [195];
 exports.modules = {
 
 /***/ 5540:
@@ -51,7 +51,6 @@ const Blog = ({ blogs  })=>{
         return content;
     };
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: "mt-[73px]",
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 className: "flex flex-col md:flex-row lg:flex-row p-4 bg-green-900 items-center justify-center gap-1 md:gap-60 lg:gap-72",

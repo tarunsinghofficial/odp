@@ -73,11 +73,11 @@ const BlogPost = ({ blogPost  })=>{
             className: "container mx-auto p-4",
             children: [
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                    className: "text-6xl text-left tracking-wide container mx-auto max-w-3xl mb-4 my-10 blog-title",
+                    className: "text-3xl md:text-4xl lg:text-5xl text-left tracking-wide container mx-auto max-w-3xl mb-4 my-4 blog-title",
                     children: blogPost.title
                 }),
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    className: "container mx-auto flex flex-col items-center ",
+                    className: "container mx-auto flex flex-col items-center",
                     children: [
                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                             className: "flex flex-row justify-between items-center container mx-auto max-w-3xl py-2 text-left blog-first-details",
@@ -139,7 +139,7 @@ const BlogPost = ({ blogPost  })=>{
                             })
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            className: "w-full max-w-3xl mt-5",
+                            className: "w-full max-w-3xl overflow-clip mt-5",
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "prose prose-lg post-content",
                                 children: (0,html_react_parser__WEBPACK_IMPORTED_MODULE_6__["default"])(sanitizedContent)

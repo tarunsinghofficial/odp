@@ -26,7 +26,7 @@ const Blog = ({ blogs }) => {
   };
 
   return (
-    <div className="mt-[73px]">
+    <div>
       <div className="flex flex-col md:flex-row lg:flex-row p-4 bg-green-900 items-center justify-center gap-1 md:gap-60 lg:gap-72">
         <div className="flex flex-col p-4 gap-4 items-center my-12 max-w-3xl text-left">
           <h1 className="text-5xl md:text-7xl lg:text-7xl text-white font-bold">

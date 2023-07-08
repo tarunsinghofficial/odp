@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import followerAvatar from "../assets/followers-avatar.jpg";
 import student from "../assets/student.jpg";
@@ -7,6 +6,16 @@ import job from "../assets/job.jpg";
 import developer from "../assets/developer.jpg";
 import Link from "next/link";
 
+import gfg from "../assets/work/gfglogo.png";
+import guvi from "../assets/work/guvi.png";
+import tp from "../assets/work/tplogo.jpg";
+import cm from "../assets/work/cmlogo.jpeg";
+import founder from "../assets/founder.jpeg";
+
+import dynamic from "next/dynamic";
+const DynamicImage = dynamic(() => import("next/image"), { ssr: false });
+
+const isSmallScreen = typeof window !== "undefined" && window.innerWidth < 768; // Adjust the breakpoint as needed
 
 export default function MainComponent() {
   return (
@@ -20,33 +29,31 @@ export default function MainComponent() {
             <div class="mr-auto place-self-center">
               <h1 className="text-green-600 max-w-2xl mb-4 text-center md:text-left lg:text-left text-5xl tracking-tight leading-none md:text-6xl xl:text-8xl">
                 Welcome to{" "}
-                <span className="text-green-800 font-bold">
-                    OneDevPlace
-                </span>
+                <span className="text-green-800 font-bold">OneDevPlace</span>
               </h1>
-              <p class="max-w-2xl mb-6 lg:mb-8 md:text-lg lg:text-xl text-[1em] text-center md:text-left lg:text-left text-gray-400">
+              <p class="max-w-2xl mb-6 lg:mb-8 md:text-lg lg:text-xl text-[1em] text-center md:text-left lg:text-left text-gray-600">
                 Find all Developers programs, student opportunities & other
-                resources at one place.
+                resources at one place 🚀
               </p>
               <div className="flex justify-center md:justify-start lg:justify-start">
-              <a
-                href="#explore"
-                class="w-1/2 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-full bg-green-800 hover:bg-green-600 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-900"
-              >
-                <span className="text-white">Explore</span>
-                <svg
-                  class="w-5 h-5 ml-2 -mr-1"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
+                <a
+                  href="#explore"
+                  class="w-1/2 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-full bg-green-800 hover:bg-green-900 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-900"
                 >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </a>
+                  <span className="text-white">Explore</span>
+                  <svg
+                    class="w-5 h-5 ml-2 -mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
               </div>
             </div>
             <div class="lg:mt-0 lg:flex max-w-3xl lg:w-[35em] xl:w-[50em]">
@@ -59,19 +66,20 @@ export default function MainComponent() {
             </div>
           </div>
         </div>
-        <div className="p-12 text-center bg-green-900">
+        {/* Our offerings */}
+        <div className="py-12 px-5 text-center bg-green-900">
           <h1 className="text-2xl lg:text-5xl md:text-3xl text-white text-center font-bold py-8">
             Our Offerings
           </h1>
         </div>
-        <div className="p-12 text-center" id="explore">
+        <div className="py-12 px-5 text-center" id="explore">
           <div className="flex container flex-col mx-auto xl:gap-[8em] lg:gap-[8em] md:gap-[6em] gap-[2em]">
             <div className="flex flex-col md:flex-row lg:flex-row mx-auto items-center gap-12">
               <div className="bg-green-700 text-white shadow-xl p-4 rounded-md max-w-lg items-center justify-center flex flex-col gap-4">
                 <h2 className="text-3xl text-white font-bold">
                   Student Opportunities
                 </h2>
-                <p className="text-lg">
+                <p className="text-[15px] md:text-lg lg:text-lg">
                   There is no substitute for hands-on experience, but for most
                   students, real-world tools can be cost prohibitive. Here you
                   can find all Student programs like, Student Ambassadors
@@ -86,7 +94,7 @@ export default function MainComponent() {
                 <h2 className="text-3xl text-white font-bold">
                   Developer Opportunities
                 </h2>
-                <p className="text-lg">
+                <p className="text-[15px] md:text-lg lg:text-lg">
                   Are you a Developer? or want to start a career in Development,
                   then this is the right place. You can find all Developer
                   opportunities like, Coding Sites, Coding Competitions,
@@ -98,7 +106,7 @@ export default function MainComponent() {
             <div className="flex flex-col md:flex-row lg:flex-row items-center mx-auto gap-12">
               <div className="bg-green-700 text-white shadow-xl p-4 rounded-md max-w-lg items-center justify-center flex flex-col gap-4">
                 <h2 className="text-3xl text-white font-bold">Internships</h2>
-                <p className="text-lg">
+                <p className="text-[15px] md:text-lg lg:text-lg">
                   OneDevPlace can help you find good Internships Websites,
                   Internships/Externships for students and developers. This site
                   consists of a list of good Internships, Research Internships,
@@ -109,22 +117,95 @@ export default function MainComponent() {
             </div>
           </div>
         </div>
+
+        {/* From the founder section */}
+        <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold mb-4 text-center">
+          👋 From The <span className="text-green-800 font-bold">Founder</span>
+        </h2>
+        <div className="py-12 px-5">
+          <div className="flex flex-col md:flex-row lg:flex-row justify-center gap-12">
+            <div className="lg:w-1/4">
+              <Image
+                src={founder}
+                alt="Founder Image"
+                width={600}
+                height={800}
+                className="rounded-lg"
+              />
+            </div>
+            <div className="lg:w-1/2 lg:mt-10">
+              <h2 className="text-2xl md:text-4xl lg:text-4xl font-bold mb-4 text-center lg:text-left">
+                Tarun Singh
+              </h2>
+              <p className="text-[15px] md:text-lg lg:text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                egestas eros euismod, venenatis nunc at, malesuada massa.
+                Integer non arcu eget turpis mattis tristique. Sed ac
+                consectetur dui. Fusce id velit a nunc laoreet sagittis. Donec
+                porttitor, nisi ac fringilla convallis, turpis dui aliquam
+                ipsum, sed rutrum justo lorem sit amet nisi. Praesent eu finibus
+                lectus. Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices posuere cubilia Curae; Donec pharetra mi a eros
+                interdum, at posuere velit tincidunt. In vitae tellus odio.
+                Suspendisse potenti. Nulla facilisi. Phasellus consectetur orci
+                a felis accumsan, id sollicitudin tellus tempus.
+              </p>
+              <div className="flex flex-wrap items-center gap-4 mt-5">
+                <p className="text-md md:text-lg lg:text-lg text-green-800">
+                  Ex Technical Writer-{" "}
+                </p>
+                <Image
+                  src={gfg}
+                  alt="Work Experience Logo"
+                  width={80}
+                  height={80}
+                  className="rounded-full"
+                />
+                <Image
+                  src={guvi}
+                  alt="Work Experience Logo"
+                  width={80}
+                  height={80}
+                  className="rounded-full"
+                />
+                <Image
+                  src={tp}
+                  alt="Work Experience Logo"
+                  width={60}
+                  height={60}
+                  className="rounded-full"
+                />
+                <Image
+                  src={cm}
+                  alt="Work Experience Logo"
+                  width={60}
+                  height={60}
+                  className="rounded-full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* follower section */}
         <hr className="text-green-800 w-2/3 mx-auto" />
         <div className="flex flex-col md:flex-row lg:flex-row p-12 justify-center mx-auto gap-1 md:gap-12 lg:gap-12">
-          <Image
-            src={followerAvatar}
-            alt="avatar"
-            height={100}
-            width={130}
-            className="md:w-[12em] md:h-[22em] lg:w-[12em] lg:h-[22em]"
-          />
+          {/* follower image */}
+          {!isSmallScreen && (
+            <DynamicImage
+              src={followerAvatar}
+              alt="avatar"
+              height={100}
+              width={130}
+              className="md:w-[12em] md:h-[22em] lg:w-[12em] lg:h-[22em]"
+            />
+          )}
           <div className="flex flex-col p-2 items-center gap-5">
-            <h1 className="text-2xl md:text-4xl lg:text-6xl text-green-900 font-bold">
-              Join our community
+            <h1 className="text-2xl md:text-4xl lg:text-6xl text-green-900">
+              <b>Join our community</b>
             </h1>
             <p className="text-md md:text-lg lg:text-xl text-green-800">
-              Are you looking for Developer/ Student programs? Student
-              opportunities? Then, you are at the right Place!
+              So, why wait more! Join our biggest community of students ,
+              developers, writers, and more.
             </p>
             <div className="flex flex-row lg:flex-row md:flex-row p-2 items-center justify center gap-5">
               <Link
