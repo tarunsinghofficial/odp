@@ -293,9 +293,24 @@ function MainComponent() {
                                         className: "text-2xl md:text-4xl lg:text-4xl font-bold mb-4 text-center lg:text-left",
                                         children: "Tarun Singh"
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
                                         className: "text-[15px] md:text-lg lg:text-lg",
-                                        children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas eros euismod, venenatis nunc at, malesuada massa. Integer non arcu eget turpis mattis tristique. Sed ac consectetur dui. Fusce id velit a nunc laoreet sagittis. Donec porttitor, nisi ac fringilla convallis, turpis dui aliquam ipsum, sed rutrum justo lorem sit amet nisi. Praesent eu finibus lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra mi a eros interdum, at posuere velit tincidunt. In vitae tellus odio. Suspendisse potenti. Nulla facilisi. Phasellus consectetur orci a felis accumsan, id sollicitudin tellus tempus."
+                                        children: [
+                                            "Hello Everyone, its great to see you to our platform! I hope you have found the opportunity you were looking for. believe that every student should have access to a diverse range of opportunities that can shape their academic and professional journey. That's why I founded OneDevPlace, a platform dedicated to connecting students, developers, and women with valuable programs that can enhance their skills and open doors to exciting opportunities.",
+                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                            "Our platform serves as a centralized hub, bringing together a wide array of resources and initiatives, including campus ambassador programs, internships, programming websites, hackathons, women-specific programs, and open-source projects. We understand the importance of empowering students and developers to thrive in their fields, and we are committed to providing the necessary support and guidance along the way.",
+                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                            "Our platform features a user-friendly interface also provide regular updates and notifications to keep you informed about new opportunities.",
+                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                            "Thank you for joining OneDevPlace and being a part of our mission to empower students, developers, and women in their educational and professional pursuits. Together, let's unlock the doors to endless possibilities and create a brighter future for all.",
+                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                            "Tarun Singh",
+                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                            "Founder of OneDevPlace"
+                                        ]
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                         className: "flex flex-wrap items-center gap-4 mt-5",

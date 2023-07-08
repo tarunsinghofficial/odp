@@ -31,21 +31,23 @@ export default function MainComponent() {
                 Welcome to{" "}
                 <span className="text-green-800 font-bold">OneDevPlace</span>
               </h1>
-              
 
               <div class="max-w-2xl my-8 lg:mb-8 text-2xl flex flex-wrap text-gray-600">
-                Find all programs for<span className="flex flex-wrap gap-4 text-center md:text-none lg:text-none items-center py-4 mb-2">
-                <span className="py-2 px-4 rounded-md bg-[#E9F9EE] text-[#299764] ">
-                  <p className="text-2xl"> Students,</p>
+                Find all programs for
+                <span className="flex flex-wrap gap-4 text-center md:text-none lg:text-none items-center py-4 mb-2">
+                  <span className="py-2 px-4 rounded-md bg-[#E9F9EE] text-[#299764] ">
+                    <p className="text-2xl"> Students,</p>
+                  </span>
+                  <span className="py-2 px-4 rounded-md bg-[#EDF6FF] text-[#0081F1] ">
+                    <p className="text-2xl">Developers</p>
+                  </span>
+                  <span className="py-2 px-4 rounded-md bg-[#FFF1E7] text-[#ED5F00]">
+                    <p className="text-2xl">Womens </p>
+                  </span>
+                  <p className="text-2xl">
+                    & more opportunities at one place 🚀
+                  </p>
                 </span>
-                <span className="py-2 px-4 rounded-md bg-[#EDF6FF] text-[#0081F1] ">
-                  <p className="text-2xl">Developers</p>
-                </span>
-                <span className="py-2 px-4 rounded-md bg-[#FFF1E7] text-[#ED5F00]">
-                  <p className="text-2xl">Womens </p>
-                </span>
-                <p className="text-2xl">& more opportunities at one place 🚀</p>
-              </span> 
               </div>
               <div className="flex justify-center md:justify-start lg:justify-start">
                 <a
@@ -86,7 +88,6 @@ export default function MainComponent() {
           </h1>
         </div>
         <div className="py-12 px-5 text-center" id="explore">
-          
           <div className="flex container flex-col mx-auto xl:gap-[8em] lg:gap-[8em] md:gap-[6em] gap-[2em]">
             <div className="flex flex-col md:flex-row lg:flex-row mx-auto items-center gap-12">
               <div className="bg-[#E9F9EE] shadow-xl p-4 rounded-md max-w-lg items-center justify-center flex flex-col gap-4">
@@ -100,7 +101,13 @@ export default function MainComponent() {
                   programs, Hackathons, Coding Competitions, etc.
                 </p>
               </div>
-              <Image src={stud} alt="hero-1" width={350} height={350} priority={true} />
+              <Image
+                src={stud}
+                alt="hero-1"
+                width={350}
+                height={350}
+                priority={true}
+              />
             </div>
 
             <div className="flex flex-col md:flex-row lg:flex-row items-center mx-auto gap-12">
@@ -120,7 +127,9 @@ export default function MainComponent() {
             </div>
             <div className="flex flex-col md:flex-row lg:flex-row items-center mx-auto gap-12">
               <div className="bg-[#FFF1E7]  shadow-xl p-4 rounded-md max-w-lg items-center justify-center flex flex-col gap-4">
-                <h2 className="text-3xl text-[#ED5F00] font-bold">Internships & more</h2>
+                <h2 className="text-3xl text-[#ED5F00] font-bold">
+                  Internships & more
+                </h2>
                 <p className="text-[15px] md:text-lg lg:text-lg">
                   OneDevPlace can help you find good Internships Websites,
                   Internships/Externships for students and developers. This site
@@ -154,17 +163,41 @@ export default function MainComponent() {
                 Tarun Singh
               </h2>
               <p className="text-[15px] md:text-lg lg:text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                egestas eros euismod, venenatis nunc at, malesuada massa.
-                Integer non arcu eget turpis mattis tristique. Sed ac
-                consectetur dui. Fusce id velit a nunc laoreet sagittis. Donec
-                porttitor, nisi ac fringilla convallis, turpis dui aliquam
-                ipsum, sed rutrum justo lorem sit amet nisi. Praesent eu finibus
-                lectus. Vestibulum ante ipsum primis in faucibus orci luctus et
-                ultrices posuere cubilia Curae; Donec pharetra mi a eros
-                interdum, at posuere velit tincidunt. In vitae tellus odio.
-                Suspendisse potenti. Nulla facilisi. Phasellus consectetur orci
-                a felis accumsan, id sollicitudin tellus tempus.
+                Hello Everyone, its great to see you to our platform! I
+                hope you have found the opportunity you were looking for.
+                believe that every student should have access to a diverse range
+                of opportunities that can shape their academic and professional
+                journey. That's why I founded OneDevPlace, a platform dedicated
+                to connecting students, developers, and women with valuable
+                programs that can enhance their skills and open doors to
+                exciting opportunities.
+                <br />
+                <br />
+                Our platform serves as a centralized
+                hub, bringing together a wide array of resources and
+                initiatives, including campus ambassador programs, internships,
+                programming websites, hackathons, women-specific programs, and
+                open-source projects. We understand the importance of empowering
+                students and developers to thrive in their fields, and we are
+                committed to providing the necessary support and guidance along
+                the way. 
+                <br />
+                
+                <br />
+                Our platform features a user-friendly interface also provide regular
+                updates and notifications to keep you informed about new
+                opportunities. 
+                <br />
+                Thank you for joining OneDevPlace
+                and being a part of our mission to empower students, developers,
+                and women in their educational and professional pursuits.
+                Together, let's unlock the doors to endless possibilities and
+                create a brighter future for all. 
+                <br />
+                <br />
+                Tarun Singh
+                <br />
+                Founder of OneDevPlace
               </p>
               <div className="flex flex-wrap items-center gap-4 mt-5">
                 <p className="text-md md:text-lg lg:text-lg text-green-800">
