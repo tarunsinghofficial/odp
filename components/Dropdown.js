@@ -7,7 +7,8 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Dropdown({ dropHeader, dropContentFirst, dropContentSecond, dropContentThird, dropContentFourth, linkone, linktwo, linkthird, linkfourth }) {
+export default function Dropdown({ dropHeader, dropContentFirst, dropContentSecond, dropContentThird, dropContentFourth, linkone, linktwo, linkthird, linkfourth, onClick}) {
+  
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
@@ -26,12 +27,13 @@ export default function Dropdown({ dropHeader, dropContentFirst, dropContentSeco
         leaveFrom="opacity-100 scale-100 translate-x-0"
         leaveTo="opacity-0 scale-95 -translate-x-full"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
                 <Link
                   href={linkone}
+                  onClick={onClick}
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
@@ -45,6 +47,7 @@ export default function Dropdown({ dropHeader, dropContentFirst, dropContentSeco
               {({ active }) => (
                 <Link
                   href={linktwo}
+                  onClick={onClick}
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
@@ -58,6 +61,7 @@ export default function Dropdown({ dropHeader, dropContentFirst, dropContentSeco
               {({ active }) => (
                 <Link
                   href={linkthird}
+                  onClick={onClick}
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
@@ -73,6 +77,7 @@ export default function Dropdown({ dropHeader, dropContentFirst, dropContentSeco
                   <Link
                     href={linkfourth}
                     type="submit"
+                    onClick={onClick}
                     className={classNames(
                       active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                       'block w-full px-4 py-2 text-left text-sm'

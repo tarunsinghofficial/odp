@@ -12,6 +12,6 @@ module.exports = {
     NEXT_PROJECT_APPWRITE: process.env.NEXT_PROJECT_APPWRITE,
   },
   images: {
-    domains: ['cloud.appwrite.io', 'secure.gravatar.com', 'img.freepik.com', 'dev-onedevplaceblog.pantheonsite.io'],
+    domains: ['cloud.appwrite.io', 'secure.gravatar.com', 'img.freepik.com', 'dev-onedevplaceblog.pantheonsite.io', 'images.pexels.com'],
   },
 };

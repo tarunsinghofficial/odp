@@ -133,9 +133,9 @@ const BlogPost = ({ blogPost  })=>{
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_5___default()), {
                                 src: blogPost.featuredImage,
                                 alt: "Featured Image",
-                                width: 800,
+                                width: 860,
                                 height: 400,
-                                className: "rounded-lg"
+                                className: "rounded-lg text-center"
                             })
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {

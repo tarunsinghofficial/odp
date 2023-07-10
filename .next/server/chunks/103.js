@@ -38,7 +38,7 @@ var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_hea
 function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
 }
-function Dropdown({ dropHeader , dropContentFirst , dropContentSecond , dropContentThird , dropContentFourth , linkone , linktwo , linkthird , linkfourth  }) {
+function Dropdown({ dropHeader , dropContentFirst , dropContentSecond , dropContentThird , dropContentFourth , linkone , linktwo , linkthird , linkfourth , onClick  }) {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_headlessui_react__WEBPACK_IMPORTED_MODULE_2__.Menu, {
         as: "div",
         className: "relative inline-block text-left",
@@ -64,13 +64,14 @@ function Dropdown({ dropHeader , dropContentFirst , dropContentSecond , dropCont
                 leaveFrom: "opacity-100 scale-100 translate-x-0",
                 leaveTo: "opacity-0 scale-95 -translate-x-full",
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_headlessui_react__WEBPACK_IMPORTED_MODULE_2__.Menu.Items, {
-                    className: "absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none",
+                    className: "absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none",
                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                         className: "py-1",
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_headlessui_react__WEBPACK_IMPORTED_MODULE_2__.Menu.Item, {
                                 children: ({ active  })=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_4___default()), {
                                         href: linkone,
+                                        onClick: onClick,
                                         className: classNames(active ? "bg-gray-100 text-gray-900" : "text-gray-700", "block px-4 py-2 text-sm"),
                                         children: dropContentFirst
                                     })
@@ -78,6 +79,7 @@ function Dropdown({ dropHeader , dropContentFirst , dropContentSecond , dropCont
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_headlessui_react__WEBPACK_IMPORTED_MODULE_2__.Menu.Item, {
                                 children: ({ active  })=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_4___default()), {
                                         href: linktwo,
+                                        onClick: onClick,
                                         className: classNames(active ? "bg-gray-100 text-gray-900" : "text-gray-700", "block px-4 py-2 text-sm"),
                                         children: dropContentSecond
                                     })
@@ -85,6 +87,7 @@ function Dropdown({ dropHeader , dropContentFirst , dropContentSecond , dropCont
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_headlessui_react__WEBPACK_IMPORTED_MODULE_2__.Menu.Item, {
                                 children: ({ active  })=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_4___default()), {
                                         href: linkthird,
+                                        onClick: onClick,
                                         className: classNames(active ? "bg-gray-100 text-gray-900" : "text-gray-700", "block px-4 py-2 text-sm"),
                                         children: dropContentThird
                                     })
@@ -96,6 +99,7 @@ function Dropdown({ dropHeader , dropContentFirst , dropContentSecond , dropCont
                                     children: ({ active  })=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_4___default()), {
                                             href: linkfourth,
                                             type: "submit",
+                                            onClick: onClick,
                                             className: classNames(active ? "bg-gray-100 text-gray-900" : "text-gray-700", "block w-full px-4 py-2 text-left text-sm"),
                                             children: dropContentFourth
                                         })
@@ -221,6 +225,21 @@ _Dropdown__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependencies__.then ? 
 
 function Navbar() {
     const [navbarOpen, setNavbarOpen] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
+    const closeNavbar = ()=>{
+        setNavbarOpen(!navbarOpen);
+    };
+    const navbarRef = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(null);
+    (0,react__WEBPACK_IMPORTED_MODULE_3__.useEffect)(()=>{
+        const handleClickOutside = (event)=>{
+            if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+                setNavbarOpen(false);
+            }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return ()=>{
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         children: [
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_head__WEBPACK_IMPORTED_MODULE_1___default()), {
@@ -250,6 +269,7 @@ function Navbar() {
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                         href: "/",
                                         className: "flex flex-row items-center",
+                                        onClick: closeNavbar,
                                         children: [
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_7___default()), {
                                                 src: _assets_logo_png__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z,
@@ -280,6 +300,7 @@ function Navbar() {
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                ref: navbarRef,
                                 className: `flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbarOpen ? "block" : "hidden"}`,
                                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
                                     className: `items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 ${navbarOpen ? "block" : "hidden"}`,
@@ -296,7 +317,8 @@ function Navbar() {
                                                 dropContentSecond: "Hackathons",
                                                 dropContentThird: "Coding Competitions",
                                                 dropContentFourth: "Competitive Programming Sites",
-                                                className: `${navbarOpen ? "hidden md:block" : ""}`
+                                                className: `${navbarOpen ? "hidden md:block" : ""}`,
+                                                onClick: closeNavbar
                                             })
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
@@ -311,7 +333,8 @@ function Navbar() {
                                                 dropContentSecond: "Mentorship Programs",
                                                 dropContentThird: "Internships",
                                                 dropContentFourth: "Scholarships",
-                                                className: `${navbarOpen ? "hidden md:block" : ""}`
+                                                className: `${navbarOpen ? "hidden md:block" : ""}`,
+                                                onClick: closeNavbar
                                             })
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
@@ -319,6 +342,7 @@ function Navbar() {
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                                 href: "/content/opensource",
                                                 className: "font-bold text-sm",
+                                                onClick: closeNavbar,
                                                 children: "Open-Source"
                                             })
                                         }),
@@ -327,6 +351,7 @@ function Navbar() {
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                                 href: "/content/internships",
                                                 className: "font-bold text-sm",
+                                                onClick: closeNavbar,
                                                 children: "Internships"
                                             })
                                         }),
@@ -335,14 +360,17 @@ function Navbar() {
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                                 href: "/content/swags",
                                                 className: "font-bold text-sm",
+                                                onClick: closeNavbar,
                                                 children: "Swags"
                                             })
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                             className: "text-green-700",
+                                            onClick: closeNavbar,
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                                 href: "/blog",
                                                 className: "font-bold text-sm",
+                                                onClick: closeNavbar,
                                                 children: "Blog"
                                             })
                                         }),
@@ -359,6 +387,16 @@ function Navbar() {
                                                 dropContentThird: "SDE Sheets",
                                                 dropContentFourth: "Study Resources",
                                                 className: `${navbarOpen ? "hidden md:block" : ""}`
+                                            })
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                            className: "text-green-700",
+                                            onClick: closeNavbar,
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                                href: "/contact",
+                                                className: "font-bold text-sm",
+                                                onClick: closeNavbar,
+                                                children: "Contact"
                                             })
                                         })
                                     ]

@@ -75,9 +75,9 @@ const BlogPost = ({ blogPost }) => {
               <Image
                 src={blogPost.featuredImage}
                 alt="Featured Image"
-                width={800}
+                width={860}
                 height={400}
-                className="rounded-lg"
+                className="rounded-lg text-center"
               />
             </div>
           )}
