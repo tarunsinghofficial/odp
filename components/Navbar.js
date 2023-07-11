@@ -43,7 +43,7 @@ export default function Navbar() {
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
-              <Link href="/" className="flex flex-row items-center" onClick={closeNavbar}>
+              <Link href="/" className="flex flex-row items-center" >
                 <Image src={logo} alt="logo" width={40} height={40} />
                 <h2 className="text-2xl text-green-800 font-bold">
                   OneDevPlace

@@ -269,7 +269,6 @@ function Navbar() {
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                         href: "/",
                                         className: "flex flex-row items-center",
-                                        onClick: closeNavbar,
                                         children: [
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_7___default()), {
                                                 src: _assets_logo_png__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z,
