@@ -63,6 +63,7 @@ const BlogPost = ({ blogPost  })=>{
     }
     // Sanitize the HTML content using DOMPurify
     const sanitizedContent = dompurify__WEBPACK_IMPORTED_MODULE_4___default().sanitize(blogPost.content);
+    console.log(sanitizedContent);
     // Calculate the estimated read time
     const wordsPerMinute = 200; // Adjust this value based on the desired reading speed
     const wordCount = sanitizedContent.split(" ").length;

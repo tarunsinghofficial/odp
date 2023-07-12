@@ -35,6 +35,7 @@ const BlogPost = ({ blogPost }) => {
 
   // Sanitize the HTML content using DOMPurify
   const sanitizedContent = DOMPurify.sanitize(blogPost.content);
+  console.log(sanitizedContent);
 
   // Calculate the estimated read time
   const wordsPerMinute = 200; // Adjust this value based on the desired reading speed
@@ -84,6 +85,7 @@ const BlogPost = ({ blogPost }) => {
           <div className="w-full max-w-4xl overflow-clip mt-5">
             <div className="prose prose-lg post-content">
               {parse(sanitizedContent)}
+              
             </div>
           </div>
           {blogPost.tags.length > 0 && (

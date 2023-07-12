@@ -56,83 +56,43 @@
     }
   }
   
-  .post-content h1 {
-    @apply pb-4 text-5xl;
+
+  .post-content h1 strong {
     font-weight: bold;
-    font-size: 48px; /* Default font size */
+    font-size: 48px; /* Adjust the font size as needed for h1 */
   }
-  
-  @media screen and (max-width: 767px) {
-    .post-content h1 {
-      font-size: 48px; /* Apply smaller font size for mobile screens */
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
-    .post-content h1 {
-      font-size: 36px; /* Apply bigger font size for other screens */
-    }
-  }
-  
-  .post-content h2 {
-    @apply pt-4 text-4xl;
-    font-family: Lato, sans-serif;
+
+  /* Target h2 within .post-content by selecting strong tag inside h2 */
+  .post-content h2 strong {
     font-weight: bold;
-    font-size: 28px; /* Default font size */
+    font-size: 36px; /* Adjust the font size as needed for h2 */
   }
-  
-  @media screen and (max-width: 767px) {
-    .post-content h2 {
-      font-size: 70px; /* Apply smaller font size for mobile screens */
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
-    .post-content h2 {
-      font-size: 70px; /* Apply bigger font size for other screens */
-    }
-  }
-  
-  .post-content h3 {
-    @apply pt-4 text-3xl;
-    font-family: Lato, sans-serif;
+
+  /* Target h3 within .post-content by selecting strong tag inside h3 */
+  .post-content h3 strong {
     font-weight: bold;
-    font-size: 24px; /* Default font size */
+    font-size: 24px; /* Adjust the font size as needed for h3 */
   }
-  
-  @media screen and (max-width: 767px) {
-    .post-content h3 {
-      font-size: 20px; /* Apply smaller font size for mobile screens */
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
-    .post-content h3 {
-      font-size: 24px; /* Apply bigger font size for other screens */
-    }
-  }
-  
-  .post-content h4 {
-    @apply pt-4 text-2xl;
-    font-family: Lato, sans-serif;
+
+  .post-content h4 strong {
     font-weight: bold;
-    font-size: 20px; /* Default font size */
+    font-size: 18px; /* Adjust the font size as needed for h4 */
   }
-  
-  @media screen and (max-width: 767px) {
-    .post-content h4 {
-      font-size: 18px; /* Apply smaller font size for mobile screens */
-    }
+
+  /* Target h5 within .post-content by selecting strong tag inside h5 */
+  .post-content h5 strong {
+    font-weight: bold;
+    font-size: 16px; /* Adjust the font size as needed for h5 */
   }
-  
-  @media screen and (min-width: 768px) {
-    .post-content h4 {
-      font-size: 20px; /* Apply bigger font size for other screens */
-    }
+
+  /* Target h6 within .post-content by selecting strong tag inside h6 */
+  .post-content h6 strong {
+    font-weight: bold;
+    font-size: 14px; /* Adjust the font size as needed for h6 */
   }
   
   .post-content ul {
-    @apply pt-4 list-disc text-lg pb-2;
+    @apply pt-4 list-disc pl-8 text-lg pb-2;
     font-family: Lato, sans-serif;
     font-weight: 200;
     font-size: 18px; /* Default font size */
@@ -140,6 +100,7 @@
   
   @media screen and (max-width: 767px) {
     .post-content ul {
+      @apply pl-4;
       font-size: 15px; /* Apply smaller font size (increased to 15px) for mobile screens */
     }
   }
@@ -151,7 +112,7 @@
   }
 
   .post-content ol {
-    @apply pt-4 list-decimal pl-4 text-lg pb-2; 
+    @apply pt-4 list-decimal pl-8 text-lg pb-2; 
     font-family: Lato, sans-serif;
     font-weight: 200;
     font-size: 18px; /* Default font size */
@@ -159,6 +120,7 @@
   
   @media screen and (max-width: 767px) {
     .post-content ol {
+      @apply pl-4;
       font-size: 15px; /* Apply smaller font size (increased to 15px) for mobile screens */
     }
   }
@@ -283,7 +245,7 @@ a {
 
 @media (prefers-color-scheme: light) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
 }
 
