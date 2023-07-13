@@ -4,8 +4,10 @@ import MainComponent from "./MainComponent";
 import Footer from "../components/Footer";
 import { useEffect } from 'react';
 import { initGA, logPageView } from '../utils/analytics';
+import Head from "next/head";
+import Script from "next/script";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps  }) {
 
   useEffect(() => {
     if (!window.GA_INITIALIZED) {
@@ -17,6 +19,8 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div>
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4351046681656198"
+     crossorigin="anonymous"></Script>
       <header>
         <Navbar />
       </header>
@@ -29,6 +33,7 @@ function MyApp({ Component, pageProps }) {
     </div>
   );
 }
+
 
 export default MyApp;
 
