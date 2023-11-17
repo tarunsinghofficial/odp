@@ -35,9 +35,9 @@ const Blog = ({ blogs }) => {
           <p className="text-lg text-white">Latest posts</p>
         </div>
       </div>
-      <div className="container mx-auto">
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-10">
-          {blogs.map((blog) => (
+      {/* <div className="container mx-auto"> */}
+        {/*<div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-10">
+           {blogs.map((blog) => (
             <Link href={`/blog/${blog.slug}`} key={blog.id}>
               <div className="cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden transition duration-300">
@@ -62,10 +62,19 @@ const Blog = ({ blogs }) => {
                 </div>
               </div>
             </Link>
-          ))}
+          ))} 
+      </div>*/}
+      <div className="p-8 bg-white shadow-md rounded-md text-center">
+            <h1 className="text-3xl font-semibold mb-4">Under Development</h1>
+            <p className="text-gray-600 mb-8">
+              We are working on bringing you exciting new updates. Please check back later!
+            </p>
+            <p className="text-sm text-gray-500">
+              Thanks for your co-operation!
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
+    /* </div> */
   );
 };
 

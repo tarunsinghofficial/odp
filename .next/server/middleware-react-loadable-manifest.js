@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST={"MainComponent.js -> next/image":{id:5675,files:[]}};
+self.__REACT_LOADABLE_MANIFEST={"MainComponent.js -> next/image":{"id":"MainComponent.js -> next/image","files":[]}}

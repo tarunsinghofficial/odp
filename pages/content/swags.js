@@ -58,7 +58,7 @@ function Swags() {
       </div>
       <div className="container mx-auto p-4 mt-10 flex flex-wrap items-center justify-center gap-20">
       {isDataLoaded ? (
-          data.map((item) => (
+          /* data.map((item) => (
             <div key={item.$id}>
               <SwagCard
                 name={item.name}
@@ -67,7 +67,16 @@ function Swags() {
                 thumbnail={item.logo_url}
               />
             </div>
-          ))
+          )) */
+          <div className="p-8 bg-white shadow-md rounded-md">
+            <h1 className="text-3xl font-semibold mb-4">Under Development</h1>
+            <p className="text-gray-600 mb-8">
+              We are working on bringing you exciting new updates. Please check back later!
+            </p>
+            <p className="text-sm text-gray-500">
+              Thanks for your co-operation!
+            </p>
+          </div>
         ) : (
           <Lottie style={{ width: '50%' }} animationData={loader} loop={true} />
         )}
